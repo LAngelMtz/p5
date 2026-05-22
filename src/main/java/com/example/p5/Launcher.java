@@ -15,7 +15,7 @@ public class Launcher {
         //medidor.ordenarCantidadReview();
         //medidor.ordenarGenero();
         //medidor.ordenarResumen();
-        medidor.ordenarReview();
+        //medidor.ordenarReview();
         Application.launch(HelloApplication.class, args);
 
     }

@@ -3,6 +3,7 @@ package com.example.p5;
 import java.time.LocalDate;
 
 public class Juego {
+    private int numero;
     private String titulo;
     private LocalDate fechaLanzamiento;
     private String equipo;
@@ -13,8 +14,9 @@ public class Juego {
     private String resumen;
     private String reviews;
 
-    public Juego(String titulo, LocalDate fechaLanzamiento, String equipo, int calificacion,
+    public Juego(int numero, String titulo, LocalDate fechaLanzamiento, String equipo, int calificacion,
                  int cantidadListado, int cantidadReview, String generos, String resumen, String reviews){
+        this.numero = numero;
         this.titulo = titulo;
         this.fechaLanzamiento = fechaLanzamiento;
         this.equipo = equipo;
@@ -26,6 +28,7 @@ public class Juego {
         this.reviews = reviews;
     }
 
+    public int getNumero() {return numero;}
     public String getTitulo() {return titulo;}
     public LocalDate getFechaLanzamiento() {return fechaLanzamiento;}
     public String getEquipo() {return equipo;}

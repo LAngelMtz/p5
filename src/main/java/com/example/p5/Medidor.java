@@ -32,6 +32,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[1]){
             inicio = System.nanoTime();
@@ -40,6 +43,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[2]){
             inicio = System.nanoTime();
@@ -48,6 +54,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[3]){
             inicio = System.nanoTime();
@@ -56,6 +65,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         if(calcularPermisos[5]){
@@ -65,6 +77,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[6]){
             inicio = System.nanoTime();
@@ -73,6 +88,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         tiemposNano.forEach(System.out::println);
@@ -97,6 +115,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[1]){
             inicio = System.nanoTime();
@@ -105,6 +126,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[2]){
             inicio = System.nanoTime();
@@ -113,6 +137,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[3]){
             inicio = System.nanoTime();
@@ -121,6 +148,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         if(calcularPermisos[5]){
@@ -130,6 +160,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[6]){
             inicio = System.nanoTime();
@@ -138,6 +171,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         tiemposNano.forEach(System.out::println);
@@ -162,6 +198,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[1]){
             inicio = System.nanoTime();
@@ -170,6 +209,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[2]){
             inicio = System.nanoTime();
@@ -178,6 +220,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[3]){
             inicio = System.nanoTime();
@@ -186,6 +231,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         if(calcularPermisos[5]){
@@ -195,6 +243,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[6]){
             inicio = System.nanoTime();
@@ -203,6 +254,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         tiemposNano.forEach(System.out::println);
@@ -227,6 +281,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[1]){
             inicio = System.nanoTime();
@@ -235,6 +292,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[2]){
             inicio = System.nanoTime();
@@ -243,6 +303,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[3]){
             inicio = System.nanoTime();
@@ -251,6 +314,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[4]){
             inicio = System.nanoTime();
@@ -259,6 +325,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[5]){
             inicio = System.nanoTime();
@@ -267,6 +336,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[6]){
             inicio = System.nanoTime();
@@ -275,6 +347,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         tiemposNano.forEach(System.out::println);
@@ -299,6 +374,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[1]){
             inicio = System.nanoTime();
@@ -307,6 +385,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[2]){
             inicio = System.nanoTime();
@@ -315,6 +396,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[3]){
             inicio = System.nanoTime();
@@ -323,6 +407,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[4]){
             inicio = System.nanoTime();
@@ -331,6 +418,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[5]){
             inicio = System.nanoTime();
@@ -339,6 +429,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[6]){
             inicio = System.nanoTime();
@@ -347,6 +440,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         tiemposNano.forEach(System.out::println);
@@ -371,6 +467,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[1]){
             inicio = System.nanoTime();
@@ -379,6 +478,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[2]){
             inicio = System.nanoTime();
@@ -387,6 +489,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[3]){
             inicio = System.nanoTime();
@@ -395,6 +500,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[4]){
             inicio = System.nanoTime();
@@ -403,6 +511,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[5]){
             inicio = System.nanoTime();
@@ -411,6 +522,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[6]){
             inicio = System.nanoTime();
@@ -419,6 +533,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         tiemposNano.forEach(System.out::println);
@@ -443,6 +560,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[1]){
             inicio = System.nanoTime();
@@ -451,6 +571,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[2]){
             inicio = System.nanoTime();
@@ -459,6 +582,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[3]){
             inicio = System.nanoTime();
@@ -467,6 +593,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         if(calcularPermisos[5]){
@@ -476,6 +605,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[6]){
             inicio = System.nanoTime();
@@ -484,6 +616,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         tiemposNano.forEach(System.out::println);
@@ -508,6 +643,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[1]){
             inicio = System.nanoTime();
@@ -516,6 +654,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[2]){
             inicio = System.nanoTime();
@@ -524,6 +665,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[3]){
             inicio = System.nanoTime();
@@ -532,6 +676,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         if(calcularPermisos[5]){
@@ -541,6 +688,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[6]){
             inicio = System.nanoTime();
@@ -549,6 +699,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         tiemposNano.forEach(System.out::println);
@@ -573,6 +726,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[1]){
             inicio = System.nanoTime();
@@ -581,6 +737,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[2]){
             inicio = System.nanoTime();
@@ -589,6 +748,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[3]){
             inicio = System.nanoTime();
@@ -597,6 +759,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         if(calcularPermisos[5]){
@@ -606,6 +771,9 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
         if(calcularPermisos[6]){
             inicio = System.nanoTime();
@@ -614,12 +782,32 @@ public class Medidor {
             duracion = fin - inicio;
             tiemposNano.add(duracion);
             tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
         }
 
         tiemposNano.forEach(System.out::println);
         tiemposMilis.forEach(System.out::println);
 
         return tiemposMilis;
+    }
+
+    public ArrayList<Juego> getJuegos(){
+        return juegos;
+    }
+
+    public void setPermisos(boolean b, int indice){
+        if(!(indice > calcularPermisos.length-1) && indice >= 0){
+            calcularPermisos[indice] = b;
+        }
+    }
+
+    public boolean getPermiso(int indice){
+        if(!(indice > calcularPermisos.length-1) && indice >= 0){
+            return calcularPermisos[indice];
+        }
+        return false;
     }
 
 
