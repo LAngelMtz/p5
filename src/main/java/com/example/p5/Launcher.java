@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Launcher {
     public static void main(String[] args) {
-        Medidor medidor = new Medidor();
+        //Medidor medidor = new Medidor();
         //medidor.ordenarTitulo();
         //medidor.ordenarFecha();
         //medidor.ordenarEquipo();

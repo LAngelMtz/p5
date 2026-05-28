@@ -12,10 +12,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.p5.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.p5.HelloController">
    <children>
-      <VBox alignment="CENTER" layoutX="1400.0" prefHeight="900.0" prefWidth="200.0" spacing="50.0" style="-fx-background-color: #4A5D4E;">
+      <VBox alignment="CENTER" layoutX="1300.0" prefHeight="800.0" prefWidth="200.0" spacing="50.0" style="-fx-background-color: #4A5D4E;">
          <children>
             <Button fx:id="botonOrdenar" mnemonicParsing="false" onMouseClicked="#ordenar" prefHeight="65.0" prefWidth="130.0" style="-fx-background-color: C5BCB1; -fx-text-fill: #3E2723; -fx-border-color: black; -fx-border-width: 1;" text="Ordenar" textAlignment="CENTER" wrapText="true">
                <font>
@@ -32,7 +31,7 @@
                   <Font name="Arial Bold" size="13.0" />
                </font>
             </Button>
-            <Button fx:id="botonNose" mnemonicParsing="false" prefHeight="65.0" prefWidth="130.0" style="-fx-background-color: C5BCB1; -fx-text-fill: #3E2723; -fx-border-color: black; -fx-border-width: 1;" text="Mostrar Datos" textAlignment="CENTER" wrapText="true">
+            <Button fx:id="botonNose" mnemonicParsing="false" prefHeight="65.0" prefWidth="130.0" style="-fx-background-color: C5BCB1; -fx-text-fill: #3E2723; -fx-border-color: black; -fx-border-width: 1;" text="Mostrar Datos" textAlignment="CENTER" visible="false" wrapText="true">
                <font>
                   <Font name="Arial Bold" size="13.0" />
                </font>
@@ -138,7 +137,7 @@
             </GridPane>
          </children>
       </VBox>
-      <StackPane prefHeight="900.0" prefWidth="1400.0" style="-fx-background-color: #F5DEB3;">
+      <StackPane prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #F5DEB3;">
          <children>
             <GridPane fx:id="gridComparacion" gridLinesVisible="true" visible="false">
               <columnConstraints>

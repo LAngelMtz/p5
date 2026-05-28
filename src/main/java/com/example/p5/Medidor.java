@@ -7,11 +7,13 @@ import java.util.Arrays;
 public class Medidor {
     private Ordenador ordenador;
     private boolean[] calcularPermisos; // 0 = quick, 1 = mergesort, 2 = shell, 3 = seleccion, 4 = radix, 5 = sort, 6 = parallel
+    private ArrayList<Double>[] tiemposMili;
     private ArrayList<Juego> juegos;
 
     public Medidor(){
         ordenador = new Ordenador();
         calcularPermisos = new boolean[7];
+        tiemposMili = new ArrayList[9];
         juegos = LectorCsv.leerArchivo();
         for(int i = 0; i < calcularPermisos.length; i++) calcularPermisos[i] = true;
     }
@@ -69,7 +71,17 @@ public class Medidor {
             tiemposNano.add((long) -1);
             tiemposMilis.add(-1.0);
         }
-
+        if(calcularPermisos[4]){
+            inicio = System.nanoTime();
+            ordenador.radixSortStrings(titulos.clone());
+            fin = System.nanoTime();
+            duracion = fin - inicio;
+            tiemposNano.add(duracion);
+            tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
+        }
         if(calcularPermisos[5]){
             inicio = System.nanoTime();
             Arrays.sort(titulos.clone());
@@ -95,6 +107,7 @@ public class Medidor {
 
         tiemposNano.forEach(System.out::println);
         tiemposMilis.forEach(System.out::println);
+        tiemposMili[0] = tiemposMilis;
 
         return tiemposMilis;
     }
@@ -178,6 +191,7 @@ public class Medidor {
 
         tiemposNano.forEach(System.out::println);
         tiemposMilis.forEach(System.out::println);
+        tiemposMili[1] = tiemposMilis;
 
         return tiemposMilis;
     }
@@ -235,7 +249,17 @@ public class Medidor {
             tiemposNano.add((long) -1);
             tiemposMilis.add(-1.0);
         }
-
+        if(calcularPermisos[4]){
+            inicio = System.nanoTime();
+            ordenador.radixSortStrings(equipos.clone());
+            fin = System.nanoTime();
+            duracion = fin - inicio;
+            tiemposNano.add(duracion);
+            tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
+        }
         if(calcularPermisos[5]){
             inicio = System.nanoTime();
             Arrays.sort(equipos.clone());
@@ -261,6 +285,7 @@ public class Medidor {
 
         tiemposNano.forEach(System.out::println);
         tiemposMilis.forEach(System.out::println);
+        tiemposMili[2] = tiemposMilis;
 
         return tiemposMilis;
     }
@@ -354,6 +379,7 @@ public class Medidor {
 
         tiemposNano.forEach(System.out::println);
         tiemposMilis.forEach(System.out::println);
+        tiemposMili[3] = tiemposMilis;
 
         return tiemposMilis;
     }
@@ -447,6 +473,7 @@ public class Medidor {
 
         tiemposNano.forEach(System.out::println);
         tiemposMilis.forEach(System.out::println);
+        tiemposMili[4] = tiemposMilis;
 
         return tiemposMilis;
     }
@@ -540,6 +567,7 @@ public class Medidor {
 
         tiemposNano.forEach(System.out::println);
         tiemposMilis.forEach(System.out::println);
+        tiemposMili[5] = tiemposMilis;
 
         return tiemposMilis;
     }
@@ -597,7 +625,17 @@ public class Medidor {
             tiemposNano.add((long) -1);
             tiemposMilis.add(-1.0);
         }
-
+        if(calcularPermisos[4]){
+            inicio = System.nanoTime();
+            ordenador.radixSortStrings(generos.clone());
+            fin = System.nanoTime();
+            duracion = fin - inicio;
+            tiemposNano.add(duracion);
+            tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
+        }
         if(calcularPermisos[5]){
             inicio = System.nanoTime();
             Arrays.sort(generos.clone());
@@ -623,6 +661,7 @@ public class Medidor {
 
         tiemposNano.forEach(System.out::println);
         tiemposMilis.forEach(System.out::println);
+        tiemposMili[6] = tiemposMilis;
 
         return tiemposMilis;
     }
@@ -680,7 +719,17 @@ public class Medidor {
             tiemposNano.add((long) -1);
             tiemposMilis.add(-1.0);
         }
-
+        if(calcularPermisos[4]){
+            inicio = System.nanoTime();
+            ordenador.radixSortStrings(resumenes.clone());
+            fin = System.nanoTime();
+            duracion = fin - inicio;
+            tiemposNano.add(duracion);
+            tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
+        }
         if(calcularPermisos[5]){
             inicio = System.nanoTime();
             Arrays.sort(resumenes.clone());
@@ -706,6 +755,7 @@ public class Medidor {
 
         tiemposNano.forEach(System.out::println);
         tiemposMilis.forEach(System.out::println);
+        tiemposMili[7] = tiemposMilis;
 
         return tiemposMilis;
     }
@@ -763,7 +813,17 @@ public class Medidor {
             tiemposNano.add((long) -1);
             tiemposMilis.add(-1.0);
         }
-
+        if(calcularPermisos[4]){
+            inicio = System.nanoTime();
+            ordenador.radixSortStrings(reviews.clone());
+            fin = System.nanoTime();
+            duracion = fin - inicio;
+            tiemposNano.add(duracion);
+            tiemposMilis.add(duracion / 1000000.0);
+        }else{
+            tiemposNano.add((long) -1);
+            tiemposMilis.add(-1.0);
+        }
         if(calcularPermisos[5]){
             inicio = System.nanoTime();
             Arrays.sort(reviews.clone());
@@ -789,6 +849,7 @@ public class Medidor {
 
         tiemposNano.forEach(System.out::println);
         tiemposMilis.forEach(System.out::println);
+        tiemposMili[8] = tiemposMilis;
 
         return tiemposMilis;
     }

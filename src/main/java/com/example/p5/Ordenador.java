@@ -313,4 +313,78 @@ public class Ordenador {
             System.out.println((i+1) + ": " + a[i]);
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //----------------------------------------------------------------------------------------------------------------
+    public void radixSortStrings(String[] array) {
+        int size = array.length;
+        if (size > 1) {
+            // Encontrar la longitud de la cadena más larga y el carácter Unicode más alto
+            int maxLongitud = 0;
+            int maxValorChar = 256; // Maximo comun
+
+            for (int i = 0; i < size; i++) {
+                if (array[i].length() > maxLongitud) {
+                    maxLongitud = array[i].length();
+                }
+                // Encontrar Unicode más grande para la cantidad de cubetas
+                for (int j = 0; j < array[i].length(); j++) {
+                    int valorChar = array[i].charAt(j);
+                    if (valorChar > maxValorChar) {
+                        maxValorChar = valorChar;
+                    }
+                }
+            }
+
+            // Definir cantidad de cubetas
+            int tamanoCubetas = maxValorChar + 1;
+
+            // Ciclo principal que recorre cada caracter
+            for (int pasada = maxLongitud - 1; pasada >= 0; pasada--) {
+
+                // Crear cubetas
+                List<String>[] cubetas = new ArrayList[tamanoCubetas];
+                for (int k = 0; k < cubetas.length; k++) {
+                    cubetas[k] = new ArrayList<>();
+                }
+
+                // Meter caracteres en las cubetas
+                for (int i = 0; i < size; i++) {
+                    int charIndex = 0;
+
+                    if (pasada < array[i].length()) {
+                        charIndex = array[i].charAt(pasada);
+                    } else {
+                        charIndex = 0; // Para palabras cortas
+                    }
+
+                    // Meter el caracter en forma numero
+                    cubetas[charIndex].add(array[i]);
+                }
+
+                // Vaciar las cubetas al array
+                int pos = 0;
+                for (int j = 0; j < cubetas.length; j++) {
+                    if (cubetas[j] != null) { // Validación de seguridad
+                        for (String valor : cubetas[j]) {
+                            array[pos] = valor;
+                            pos++;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

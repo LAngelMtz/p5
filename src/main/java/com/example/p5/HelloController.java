@@ -230,6 +230,7 @@ public class HelloController {
 
     @FXML
     void ordenar(MouseEvent event) {
+        boolean radixString = true;
         if(botonComparacion.isDisable() && botonDatos.isDisable()) botonComparacion.setDisable(false);
         int cantidadGraficas = 0;
         int filas = 1;
@@ -265,15 +266,15 @@ public class HelloController {
             gridComparacion.getRowConstraints().add(rc);
         }
 
-        if(checksColumnas[0]) crearGrafica("Titulos", medidor.ordenarTitulo(), false);
+        if(checksColumnas[0]) crearGrafica("Titulos", medidor.ordenarTitulo(), radixString);
         if(checksColumnas[1]) crearGrafica("Fecha de lanzamiento", medidor.ordenarFecha(), false);
-        if(checksColumnas[2]) crearGrafica("Equipo", medidor.ordenarEquipo(), false);
+        if(checksColumnas[2]) crearGrafica("Equipo", medidor.ordenarEquipo(), radixString);
         if(checksColumnas[3]) crearGrafica("Calificacion", medidor.ordenarCalificacion(), true);
         if(checksColumnas[4]) crearGrafica("Cantidad de listados", medidor.ordenarCantidadListado(), true);
         if(checksColumnas[5]) crearGrafica("Cantidad de reviews", medidor.ordenarCantidadReview(), true);
-        if(checksColumnas[6]) crearGrafica("Genero", medidor.ordenarGenero(), false);
-        if(checksColumnas[7]) crearGrafica("Resumen", medidor.ordenarResumen(), false);
-        if(checksColumnas[8]) crearGrafica("Reviews", medidor.ordenarReview(), false);
+        if(checksColumnas[6]) crearGrafica("Genero", medidor.ordenarGenero(), radixString);
+        if(checksColumnas[7]) crearGrafica("Resumen", medidor.ordenarResumen(), radixString);
+        if(checksColumnas[8]) crearGrafica("Reviews", medidor.ordenarReview(), radixString);
 
     }
 

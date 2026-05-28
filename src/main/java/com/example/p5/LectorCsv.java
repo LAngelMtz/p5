@@ -37,13 +37,13 @@ public class LectorCsv {
                         if(!fechaRaw.equalsIgnoreCase("releases on TBD"))
                             fechaLanzamiento = LocalDate.parse(fechaRaw, DateTimeFormatter.ofPattern("MMM dd, yyyy", Locale.ENGLISH));
                         else fechaLanzamiento = LocalDate.MAX;
-                        String equipo = datos[3].replace("[", "").replace("]", "").replace("\"", "").trim();
+                        String equipo = datos[3].replace("[", "").replace("]", "").replace("\"", "").replace("'", "").trim();
                         int calificacion = (int) (Float.parseFloat(datos[4]) * 10);
                         int cantidadListado = (int) (Float.parseFloat(datos[5].replace("K","")) * 1000);
                         int cantidadReview = (int)  (Float.parseFloat(datos[6].replace("K","")) * 1000);
-                        String generos = datos[7].replace("[", "").replace("]", "").replace("\"", "").trim();
-                        String resumen = datos[8].replace("[", "").replace("]", "").replace("\"", "").trim();
-                        String reviews = datos[9].replace("[", "").replace("]", "").replace("\"", "").trim();
+                        String generos = datos[7].replace("[", "").replace("]", "").replace("\"", "").replace("'", "").trim();
+                        String resumen = datos[8].replace("[", "").replace("]", "").replace("\"", "").replace("'", "").trim();
+                        String reviews = datos[9].replace("[", "").replace("]", "").replace("\"", "").replace("'", "").trim();
 
 
                         //System.out.println(numero + " : " + nombre);
